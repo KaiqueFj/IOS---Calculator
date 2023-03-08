@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  align-items: center;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.calculator-container {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 30px;
+}
+
+.screen {
+  padding: 1.2rem;
+  color: white;
+  text-align: right;
+  justify-content: right;
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 4rem;
+  font-size: 50px;
+  height: 5vh;
+}
+
+.buttons {
+  padding: 1rem;
+  width: 30rem;
+  flex-wrap: wrap;
+}
+
+.calcBtn {
+  background-color: rgb(47, 47, 52);
+  color: white;
+  width: 6rem;
+  height: 6rem;
+  padding: 2rem;
+  justify-content: space-around;
+  font-size: 30px;
+  margin: 4px;
+  border-radius: 50px;
+  border: none;
+}
+
+.calcBtn:hover {
+  background-color: rgb(122, 122, 126);
+}
+
+.calcBtn:nth-child(1),
+.calcBtn:nth-child(2),
+.calcBtn:nth-child(3) {
+  background-color: rgb(156, 154, 154);
+  color: black;
+}
+
+.calcBtn:hover:nth-child(1),
+.calcBtn:hover:nth-child(2),
+.calcBtn:hover:nth-child(3) {
+  background-color: rgb(197, 194, 194);
+  color: black;
+}
+
+.calcBtn:nth-child(4),
+.calcBtn:nth-child(8),
+.calcBtn:nth-child(12),
+.calcBtn:nth-child(16),
+.calcBtn:nth-child(19) {
+  background-color: rgb(230, 175, 47);
+  color: white;
+}
+
+.calcBtn:hover:nth-child(4),
+.calcBtn:hover:nth-child(8),
+.calcBtn:hover:nth-child(12),
+.calcBtn:hover:nth-child(16),
+.calcBtn:hover:nth-child(19) {
+  background-color: rgb(240, 240, 240);
+  color: rgb(230, 175, 47);
+}
+
+.calcBtn:nth-child(17) {
+  width: 12.8rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 700px) {
+  .screen {
+    padding: 0.7rem;
+    color: white;
+    text-align: right;
+    justify-content: right;
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 4rem;
+    font-size: 20px;
+    height: 2vh;
+  }
+
+  .buttons {
+    padding: 5rem;
+    width: 18rem;
+    flex-wrap: wrap;
+  }
+
+  .calcBtn {
+    background-color: rgb(47, 47, 52);
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.7rem;
+    font-size: 10px;
+    display: inline-flex;
+    margin: 2px;
+    border-radius: 50px;
+    border: none;
+  }
+
+  .calcBtn:nth-child(17) {
+    width: 3.6rem;
+    text-align: left;
+  }
+}
