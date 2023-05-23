@@ -94,18 +94,15 @@ width: 14rem;
 }
 
 @media screen and (width <= 768px) {
-  .buttons {
-    width: 20rem;
-  }
+  
 
   .calcBtn {
     width: 3rem;
     height: 3rem;
-    margin: 0.7rem;
     font-size: 1.2em;
   }
 
   .calcBtn:nth-child(17) {
-    width: 7.8rem;
-  }
+    grid-column: 1/3;
+    width: 8rem;  }
 }
