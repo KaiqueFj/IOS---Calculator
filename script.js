@@ -8,6 +8,7 @@ const Calculate = function () {
     e.preventDefault();
     const target = e.target.closest(".calcBtn");
     if (!target) return;
+    console.log(target.textContent);
 
     if (target.textContent === "C") {
       numbers = [];
@@ -22,5 +23,6 @@ const Calculate = function () {
     }
   });
 };
+
 
 Calculate();
