@@ -12,7 +12,7 @@ const Calculate = function () {
 
     if (target.textContent === "=") {
       calcScreen.textContent = eval(calcNumbers);
-      numbers = [];
+      numbers.splice(0, -1);
       numbers.push(calcScreen.textContent);
     } else if (target.textContent === "C") {
       numbers = [];
