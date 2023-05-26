@@ -1,6 +1,5 @@
 let parentElement = document.querySelector(".buttons");
 let calcScreen = document.querySelector(".screen");
-let result;
 let calcNumbers;
 let numbers = [];
 
@@ -12,7 +11,7 @@ const Calculate = function () {
 
     if (target.textContent === "=") {
       calcScreen.textContent = eval(calcNumbers);
-      numbers.splice(0, -1);
+      numbers=[]
       numbers.push(calcScreen.textContent);
     } else if (target.textContent === "C") {
       numbers = [];
